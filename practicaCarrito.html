@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Práctica carrito</title>
+</head>
+
+<body>
+    <main class="container mt-5">
+        <div class="row text-center">
+            <article class="col-sm-4 mb-3">
+                <div class="card ">
+                    <div class="card-body">
+                        <h5 class="card-tittle">Frutilla 🍓</h5>
+                        <button class="btn btn-outline-primary" data-fruta="Frutilla">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-sm-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="banana">Banana 🍌</h5>
+                        <button class="btn btn-outline-primary" data-fruta="Banana">Agregar</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-sm-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="manzana">Manzana 🍏</h5>
+                        <button class="btn btn-outline-primary" data-fruta="Manzana">Agregar</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <section class="container mt-3">
+        <ul class="list-group " id="carrito"></ul>
+
+        <template id="templateFrutas">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span class="lead">Frutilla</span>
+                <span class="badge bg-primary rounded-pill">1</span>
+            </li>
+        </template>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <script src="js/carrito.js"></script>
+</body>
+
+</html>
