@@ -42,4 +42,19 @@ const pintarCarrito = () =>{
 
 btnsBotones.forEach(btn => btn.addEventListener("click",agregarAlCarrito))
 
+/**Programación funcional 
+ * se organiza el código en funciones más pequeñas y básicas que se pueden combinar para construir programas de mayor complejidad 
+*/
 
+/**Paradigma de programación es una forma de ver/interpretar y crear código de programación para resolver problemas*/
+
+/**Paradigma Imperativo|Emperador (POO)
+ * en el que el prgramador isntruye a la máquina cómo cambiar su estado, dictamos el camino a seguir a través del control de flujo.
+ * Variables, funciones, if else, switch, loops(while, for, for of, for in), try catch, async await. Por lo tanto siempre utilizas programación 
+ * imperativa en Javascript
+ */
+
+/**Paradigma Declarativo (funcional)
+ * en el que el programador solo declara las propiedades del resultado deseado, pero no cómo calcularlo. Escribe código que hace algo (declaro lo que
+ * hace) pero no es específico sobre cómo hacerlo(imperativo)
+ */
