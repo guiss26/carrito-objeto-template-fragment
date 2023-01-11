@@ -20,7 +20,8 @@
                 <div class="card ">
                     <div class="card-body">
                         <h5 class="card-tittle">Frutilla 🍓</h5>
-                        <button class="btn btn-outline-primary" data-fruta="Frutilla">Agregar</button>
+                        <p class="lead">$300</p>
+                        <button class="btn btn-outline-primary" data-fruta="Frutilla" data-precio="300">Agregar</button>
                     </div>
                 </div>
             </article>
@@ -29,7 +30,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title" id="banana">Banana 🍌</h5>
-                        <button class="btn btn-outline-primary" data-fruta="Banana">Agregar</button>
+                        <p class="lead">$100</p>
+                        <button class="btn btn-outline-primary" data-fruta="Banana" data-precio="100">Agregar</button>
                     </div>
                 </div>
             </article>
@@ -38,7 +40,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title" id="manzana">Manzana 🍏</h5>
-                        <button class="btn btn-outline-primary" data-fruta="Manzana">Agregar</button>
+                        <p class="lead">$200</p>
+                        <button class="btn btn-outline-primary" data-fruta="Manzana" data-precio="200">Agregar</button>
                     </div>
                 </div>
             </article>
@@ -47,20 +50,34 @@
 
     <section class="container mt-3">
         <ul class="list-group " id="carrito"></ul>
-
-        <template id="templateFrutas">
-            <li class="list-group-item d-flex justify-content-between align-items-center bg-secondary">
-                <span class="lead">Frutilla</span>
-                <span class="badge bg-primary rounded-pill">1</span>
-            </li>
-            <li id="total" class="d-flex justify-content-between align-items-center">
-                TOTAL: 
-                <!-- <span class="lead">TOTAL: <span>$0</span></span> -->
-                <span class="lead">$0</span>
-                <button class="btn btn-outline-primary">Comprar carrito</button>
-            </li>
-        </template>
     </section>
+
+    <footer class="container mt-3" id="footer">
+        <template id="templateFooter">
+            <div class="card">
+                <div class="card-body d-flex justify-content-between align-items-center">
+                    <p id="total" class="lead mb-0">TOTAL: $<span>1500</span></p>
+                    <button class="btn btn-outline-info">Finalizar compra</button>
+                </div>
+            </div>
+        </template>
+    </footer>
+
+    <template id="templateFrutas">
+        <li class="list-group-item bg-secondary text-white">
+            <span class="badge bg-primary rounded-pill align-middle">1</span>
+            <span class="lead align-middle">Frutilla</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div class="">
+                <p class="lead mb-0">TOTAL: $<span>1</span></p>
+            </div>
+            <div class="">
+                <button class="btn btn-sm btn-success">Agregar</button>
+                <button class="btn btn-sm btn-danger">Quitar</button>
+            </div>
+        </li>
+    </template>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
