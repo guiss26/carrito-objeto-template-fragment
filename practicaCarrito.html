@@ -49,9 +49,15 @@
         <ul class="list-group " id="carrito"></ul>
 
         <template id="templateFrutas">
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li class="list-group-item d-flex justify-content-between align-items-center bg-secondary">
                 <span class="lead">Frutilla</span>
                 <span class="badge bg-primary rounded-pill">1</span>
+            </li>
+            <li id="total" class="d-flex justify-content-between align-items-center">
+                TOTAL: 
+                <!-- <span class="lead">TOTAL: <span>$0</span></span> -->
+                <span class="lead">$0</span>
+                <button class="btn btn-outline-primary">Comprar carrito</button>
             </li>
         </template>
     </section>
@@ -61,6 +67,7 @@
     </script>
 
     <script src="js/carrito.js"></script>
+    <!-- <script src="js/arraymethods.js"></script> -->
 </body>
 
 </html>
