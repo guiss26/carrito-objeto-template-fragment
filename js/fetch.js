@@ -1,6 +1,8 @@
 console.log("vinculado")
 
 /**Fetch
+ * Es una interfaz para hacer solicitudes AJAX en JavaScript. Es usado generalmente para hacer una solicitud a una
+ * API.
  * la API fetch proporciona una interfaz para recuperar recursos (incluidos a través de la red).
  * Resultará familiar a cualquier que haya usado XMLHttpRequest, pero la nueva API ofrece un
  * conjunto de características más potentes y flexible.
